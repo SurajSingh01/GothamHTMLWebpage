@@ -89,7 +89,7 @@ body{
 	margin: 0 auto;
 
 }
-.page-header .wrapper, .page-footer .wrapper, .main .wrapper{
+.page-header .wrapper, .page-footer .wrapper{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -108,7 +108,7 @@ body{
 	padding: 0 67px; 
 }
 /*********MAIN*************************/
-.main{
+.main>.wrapper{
 	display: flex;
 }
 main{
@@ -212,6 +212,45 @@ article h3{
 	outline: none;
 	text-align: center;
 	margin: 0 auto;
+}
+/*****************ASIDE***************************************/
+aside.right-sidebar{
+	padding-top: 78px;
+	padding-left: 65px;
+}
+.search-box{
+	width: 100%;
+	position: relative;
+}
+.search-box label{
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	z-index: 100;
+}
+.search-box input{
+	width: 100%;
+	border-radius: 10px;
+	padding: 8px 10px 8px 30px;
+	outline: none;
+	border: 1px solid #e5e5e5;
+	font-family: Roboto;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.calender-widget{
+	border:1px solid #e5e5e5;
+	width: 100%;
+}
+.calender-widget .calender-top{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 38px;
+	width: 100%;
+}
+.calender-prev, .calender-next{
+	color: #e5e5e5;
 }
 /****************FOOTER***************************************/
 .page-footer{
