@@ -39,7 +39,6 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
 }
 
@@ -241,6 +240,8 @@ aside.right-sidebar{
 .calender-widget{
 	border:1px solid #e5e5e5;
 	width: 100%;
+	border-radius: 10px;
+	margin-top: 38px;
 }
 .calender-widget .calender-top{
 	display: flex;
@@ -248,9 +249,41 @@ aside.right-sidebar{
 	align-items: center;
 	height: 38px;
 	width: 100%;
+	border-radius: 10px;
 }
 .calender-prev, .calender-next{
 	color: #e5e5e5;
+}
+.calender-widget table{
+	width: 100%;
+	border-radius: 0 0 10px 10px; 
+}
+.calender-widget table th{
+	height: 26px;
+	background: #e7e7e7;
+	color: #888;
+	text-align: center;
+	vertical-align: middle;
+}
+.calender-widget table td{
+	height: 33px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #e5e5e5;
+	color: #e5e5e5;
+}
+.calender-widget .current-month{
+	color: #4d4d4d;
+}
+.calender-widget tr:last-child td:first-child{
+	border-radius: 0 0 0 10px;
+}
+.calender-widget tr:last-child td:last-child{
+	border-radius: 0 0 0 10px;
+}
+.calender-widget .current-day{
+	background-color: #f7c61d;
+	color: #fff;
 }
 /****************FOOTER***************************************/
 .page-footer{
